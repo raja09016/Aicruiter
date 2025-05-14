@@ -18,7 +18,7 @@ const Provider = ({children}) => {
             .select('*')
             .eq('email', user?.email)
 
-            console.log(Users)
+            // console.log("Users",Users);
             // if not then craete new user
             if(Users.length ==0){
                
@@ -32,7 +32,7 @@ const Provider = ({children}) => {
                     
                  }
                 ])
-                console.log(data);
+                // console.log(data);
                 setUser(data);
                 return;
         
