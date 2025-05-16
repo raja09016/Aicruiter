@@ -13,7 +13,7 @@ import { Progress } from "@/components/ui/progress";
 
 function CandidateFeedbackDialog({ candidate }) {
     const feedback = candidate?.feedback?.feedback ;
-    // console.log("feedback",feedback)
+    console.log("feedback",feedback)
   return (
     <Dialog>
       <DialogTrigger>

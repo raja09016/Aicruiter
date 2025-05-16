@@ -12,7 +12,7 @@ function InterviewDetailContainer({interviewDetail}) {
       console.error('Invalid JSON in type field:', error)
     }
 
-    // console.log("question",interviewDetail?.questionList[0])
+    console.log("question",interviewDetail?.questionList[0])
 
   
   return (

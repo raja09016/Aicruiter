@@ -4,7 +4,7 @@ import React from 'react'
 import CandidateFeedbackDialog from './CandidateFeedbackDialog'
 
 function CandidatesList({CandidatesList}) {
-    // console.log(CandidatesList)
+    console.log(CandidatesList)
   return (
     <div className=''>
         <h2 className='font-bold my-5'>Candidates {CandidatesList?.length}</h2>

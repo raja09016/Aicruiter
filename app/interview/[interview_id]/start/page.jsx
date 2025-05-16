@@ -189,7 +189,7 @@ const GenerateFeedback =  async  () => {
        },
     ])
     .select();
-    // console.log("feedback data",data);
+    console.log("feedback data",data);
    
     setLoading(false);
   }

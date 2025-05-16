@@ -6,15 +6,23 @@ import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
 
 export default function InterviewCompletePage() {
-  useEffect(() => {
-    // Check if the page has already been reloaded
-    if (!sessionStorage.getItem('reloaded')) {
-      // Mark that the page has been reloaded
-      sessionStorage.setItem('reloaded', 'true');
-      // Reload the page
-      window.location.reload();
-    }
-  }, []); // empty dependency array ensures it runs once
+  // useEffect(() => {
+  //   // Check if the page has already been reloaded
+  //   if (!sessionStorage.getItem('reloaded')) {
+  //     // Mark that the page has been reloaded
+  //     sessionStorage.setItem('reloaded', 'true');
+  //     // Reload the page
+  //     window.location.reload();
+  //   }
+  // }, []); // empty dependency array ensures it runs once
+
+  const timer = setTimeout(() => {
+    window.location.reload();
+  }, 5000); // 5000 ms = 5 seconds
+
+  // Optional: Cleanup the timer on unmount
+//   return () => clearTimeout(timer);
+// }, []);
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-white p-6">
       {/* Logo and Status */}
