@@ -13,7 +13,7 @@ import { Progress } from "@/components/ui/progress";
 
 function CandidateFeedbackDialog({ candidate }) {
     const feedback = candidate?.feedback?.feedback ;
-    console.log("feedback",feedback)
+    console.log("feedbackkkkkk",feedback)
   return (
     <Dialog>
       <DialogTrigger>
@@ -72,7 +72,7 @@ function CandidateFeedbackDialog({ candidate }) {
                     </div>
 
               </div>
-              <div className={`p-5 mt-10 flex items-center justify-between rounded-md ${feedback?.Recommendation =="No" ? 'bg-red-100':'bg-green-100'  } `}>
+              <div className={`p-5 mt-10 flex items-center justify-between rounded-md ${(feedback?.Recommendation =="No" || feedback?.Recommendation =="Not Recommended" ) ? 'bg-red-100':'bg-green-100'  } `}>
 
                <div>
                <h2 className={` font-bold ${(feedback?.Recommendation =="No" || feedback?.Recommendation =="Not Recommended") ? 'text-red-700':'text-green-700'  } `}>Recommendation Msg:</h2>
